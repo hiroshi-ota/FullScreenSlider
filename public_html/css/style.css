@@ -79,6 +79,7 @@
 	-o-transform: translateX(0%) scale(1);
 	-ms-transform: translateX(0%) scale(1);
 	transform: translateX(0%) scale(1);
+        position: fixed;  /*pozycja przecięcia*/
 }
 
 .sl-slide-vertical .sl-content-slice:first-child {

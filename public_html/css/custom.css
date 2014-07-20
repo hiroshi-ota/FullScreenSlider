@@ -1,13 +1,13 @@
 
-.demo-2 .sl-slider-wrapper {
-	width: 100%;
+.slider .sl-slider-wrapper {
+	width: 1000px;
 	height: 600px;
 	overflow: hidden;
 	position: relative;
 }
 
-.demo-2 .sl-slider h2,
-.demo-2 .sl-slider blockquote {
+.slider .sl-slider h2,
+.slider .sl-slider blockquote {
 	padding: 100px 30px 10px 30px;
 	width: 80%;
 	max-width: 960px;
@@ -17,19 +17,21 @@
 	z-index: 100;
 }
 
-.demo-2 .sl-slider h2 {
+.slider .sl-slider h2 {
 	font-size: 100px;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+        position: absolute;
 }
 
-.demo-2 .sl-slider blockquote {
+.slider .sl-slider blockquote {
 	font-size: 28px;
-	padding-top: 10px;
+	padding-top: 250px;  /* wysokość opisu*/
 	font-weight: 300;
 	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+        position: fixed;
 }
 
-.demo-2 .sl-slider blockquote cite {
+.slider .sl-slider blockquote cite {
 	font-size: 16px;
 	font-weight: 700;
 	font-style: normal;
@@ -39,7 +41,7 @@
 	display: inline-block;
 }
 
-.demo-2 .bg-img {
+.slider .bg-img {
 	padding: 200px;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
@@ -119,7 +121,7 @@
 		inset 0 1px 1px rgba(0,0,0,0.1);
 }
 
-.demo-2 .nav-dots span {
+.slider .nav-dots span {
 	background: rgba(150,150,150,0.1);
 	margin: 6px;
 	-webkit-transition: all 0.2s;
@@ -133,8 +135,8 @@
 		0 0 0 2px rgba(255,255,255,0.5);
 }
 
-.demo-2 .nav-dots span.nav-dot-current,
-.demo-2 .nav-dots span:hover {
+.slider .nav-dots span.nav-dot-current,
+.slider .nav-dots span:hover {
 	box-shadow: 
 		0 1px 1px rgba(255,255,255,0.4), 
 		inset 0 1px 1px rgba(0,0,0,0.1),
@@ -155,20 +157,20 @@
 /* Content elements */
 
 
-.demo-2 .bg-img-1 {
+.slider .bg-img-1 {
 	background-image: url(../images/1.jpg);
 }
-.demo-2 .bg-img-2 {
+.slider .bg-img-2 {
 	background-image: url(../images/2.jpg);
 }
-.demo-2 .bg-img-3 {
-	background-image: url(../images/3.jpg);
+.slider .bg-img-3 {
+	background-image: url(../images/1.jpg);
 }
-.demo-2 .bg-img-4 {
-	background-image: url(../images/4.jpg);
+.slider .bg-img-4 {
+	background-image: url(../images/2.jpg);
 }
-.demo-2 .bg-img-5 {
-	background-image: url(../images/5.jpg);
+.slider .bg-img-5 {
+	background-image: url(../images/1.jpg);
 }
 
 /* Animations for content elements */
@@ -320,15 +322,15 @@
 /* Media Queries for custom slider */
 
 @media screen and (max-width: 660px) {
-        .demo-2 .sl-slider-wrapper {
+        .slider .sl-slider-wrapper {
 		height: 500px;
 	}
 
-	.demo-2 .sl-slider h2 {
+	.slider .sl-slider h2 {
 		font-size: 36px;
 	}
 
-	.demo-2 .sl-slider blockquote {
+	.slider .sl-slider blockquote {
 		font-size: 16px;
 	}
 
